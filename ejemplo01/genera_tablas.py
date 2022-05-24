@@ -28,7 +28,7 @@ class Club(Base):
     # Club puede acceder a los jugadores asociados
     # por la llave foránea
     jugadores = relationship("Jugador", back_populates="club")
-
+                          
     
     def __repr__(self):
         return "Club: nombre=%s deporte=%s fundación=%d" % (
